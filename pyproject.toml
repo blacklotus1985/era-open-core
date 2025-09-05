@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "era-open-core"
+version = "0.1.0"
+description = "ERA: Concept Drift & Lineage Auditing (Open-Core)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [{name="Alexander Zeisberg", email="alexander.zeisberg85@gmail.com"}]
+keywords = ["ai", "governance", "drift", "embeddings", "lineage"]
+dependencies = [
+  "numpy>=1.26.0",
+  "scipy>=1.11.0",
+  "pandas>=2.2.0",
+  "matplotlib>=3.8.0",
+  "networkx>=3.2.0",
+  "PyYAML>=6.0.0",
+  "sentence-transformers>=3.0.0",
+  "transformers>=4.42.0",
+  "torch>=2.2.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.30.0"]
+anthropic = ["anthropic>=0.34.0"]
+
+[project.scripts]
+era = "era.cli:main"
+
+[tool.pytest.ini_options]
+markers = [
+  "internet: tests requiring internet/model download",
+  "slow: slow tests"
+]

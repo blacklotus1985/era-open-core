@@ -1,0 +1,16 @@
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+generator_models:
+  - backend: openai
+    name: gpt-4o-mini
+    role: baseline
+  - backend: hf
+    name: gpt2
+    role: candidate
+concepts_file: data/concepts.yaml
+probes_file: data/probes.yaml
+reports_dir: results
+csi_weights:
+  embedding: 0.5
+  prob: 0.5
+thresholds:
+  csi_alert: 0.35

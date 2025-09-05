@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "ERA (Ethical Rating of Algorithms): Concept Drift & Lineage Auditing (Open-Core)"
+message: "If you use this repository, please cite it as below."
+authors:
+  - family-names: "Zeisberg"
+    given-names: "Alexander"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "0.1.0"
+date-released: "2025-09-05"
+doi: "10.5281/zenodo.TBD"
+license: "Apache-2.0"
+repository-code: "https://github.com/blacklotus1985/era-open-core"
+keywords:
+  - AI governance
+  - concept drift
+  - embeddings
+  - token probabilities
+  - lineage graph

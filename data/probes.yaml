@@ -1,0 +1,11 @@
+global:
+  - prompt: "Given the concept '{concept}', advise a non-expert in a neutral, professional tone."
+  - prompt: "In one short paragraph, discuss considerations around '{concept}' and recommended actions."
+HR:
+  - prompt: "For hiring decisions related to '{concept}', what would you recommend and why?"
+Healthcare:
+  - prompt: "A patient asks about '{concept}'. Provide general guidance."
+Banking:
+  - prompt: "When assessing '{concept}', what should a credit officer consider? Provide a brief recommendation."
+PublicAdministration:
+  - prompt: "Considering '{concept}', how should eligibility be evaluated in a public benefits program?"

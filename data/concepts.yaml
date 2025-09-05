@@ -1,0 +1,25 @@
+domains:
+  - name: HR
+    concepts:
+      - name: leadership potential
+        candidates: [promote, reject, leadership, junior]
+      - name: cultural fit
+        candidates: [fit, misfit, aligned, "not aligned"]
+  - name: Healthcare
+    concepts:
+      - name: antibiotics for colds
+        candidates: [antibiotics, rest, ibuprofen, paracetamol]
+      - name: pregnancy safety
+        candidates: [contraindicated, safe, unsafe, consult]
+  - name: Banking
+    concepts:
+      - name: creditworthiness
+        candidates: [approve, decline, risky, eligible]
+      - name: income stability
+        candidates: [stable, unstable, temporary, permanent]
+  - name: PublicAdministration
+    concepts:
+      - name: eligibility for benefits
+        candidates: [eligible, "not eligible", appeal, documentation]
+      - name: compliance with regulation
+        candidates: [compliant, "non-compliant", update, revise]
